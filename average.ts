@@ -1,11 +1,11 @@
-let averageResult: number;
+let inputAverage: number;
 
-function calculateAverage(...numberArray: number[]): number {
-  averageResult = numberArray.reduce((a, b) => a + b) / numberArray.length;
+function calculateInputAverage(...numberInputs: number[]): number {
+  inputAverage = numberInputs.reduce((a, b) => a + b) / numberInputs.length;
 
-  return averageResult;
+  return inputAverage;
 }
 
-let result: number = calculateAverage(1, 2, 3, 4, 5, 6);
+let result: number = calculateInputAverage(1, 2, 3, 4, 5, 6);
 
 console.log("average:", result);

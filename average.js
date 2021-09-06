@@ -1,10 +1,10 @@
 var averageResult;
 function calculateAverage() {
-    var numberArray = [];
+    var numberInputs = [];
     for (var _i = 0; _i < arguments.length; _i++) {
-        numberArray[_i] = arguments[_i];
+        numberInputs[_i] = arguments[_i];
     }
-    averageResult = numberArray.reduce(function (a, b) { return a + b; }) / numberArray.length;
+    averageResult = numberInputs.reduce(function (a, b) { return a + b; }) / numberInputs.length;
     return averageResult;
 }
 var result = calculateAverage(1, 2, 3, 4, 5, 6);
