@@ -1,9 +1,11 @@
 let averageResult: number;
 
-function calculateAverage(numberArray: number[]): void {
+function calculateAverage(numberArray: number[]): number {
   averageResult = numberArray.reduce((a, b) => a + b) / numberArray.length;
 
-  console.log("average result:", averageResult);
+  return averageResult;
 }
 
-calculateAverage([1, 2, 3, 4, 5]);
+let result: number = calculateAverage([1, 2, 3, 4, 5]);
+
+console.log("average:", result);
